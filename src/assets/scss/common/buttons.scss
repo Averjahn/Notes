@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  padding: .8em 1.8em;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin: 1em;
+
+
+  // default btn
+  &.btnDefaul {
+    color: #ffffff;
+    border: 1px solid #333333;
+    background-color: #333333;
+  }
+
+  // primiry btn
+  &.btnPrimary {
+    color: #ffffff;
+    border: 1px solid #494ce8;
+    background-color: #494ce8;
+   
+  }
+
+  &.btnPrimary:hover {
+    color: #ffffff;
+    border: 1px solid #7173e1;
+    background-color: #7173e1;
+    padding: .7em 1.6em;
+    margin-bottom: 1.2em;
+  }
+
+  // danger btn
+  &.btnDanger {
+    color: #ffffff;
+    border: 1px solid hsl(0, 48%, 48%);
+    background-color: #b53f3f;
+  }
+
+  &.btnWhite {
+    color: #333333;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+  }
+}
