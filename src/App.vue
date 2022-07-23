@@ -7,6 +7,8 @@
 
         <message v-if="message" :message="message" />
 
+        <priority />
+
         <newNote :note="note" @addNote="addNote"/>
 
         <div class="note-header">
@@ -35,10 +37,11 @@ import message from '@/components/Message.vue'
 import newNote from '@/components/NewNote.vue'
 import notes from '@/components/Notes.vue'
 import search from '@/components/Search.vue'
+import priority from '@/components/Priority.vue'
 export default {
 
   components: {
-    message, newNote, notes, search
+    message, newNote, notes, search, priority
   },
 
   data () {

@@ -1,5 +1,5 @@
 .btn {
-  display: inline-block;
+  display: inline;
   padding: .8em 1.8em;
   line-height: 1;
   text-transform: uppercase;
@@ -44,5 +44,32 @@
     color: #333333;
     border: 1px solid #ffffff;
     background-color: #ffffff;
+  }
+// VERY HIGH PRIOR
+  &.btnVeryHighPriority {
+    background-color: $veryHigh-color;
+  }
+
+  &.btnVeryHighPriority:active {
+    background-color: rgb(192, 51, 51);
+    transition: all 0.1s ease 0s;
+  }
+// HIGH PRIOR
+  &.btnHighPriority {
+    background-color: $high-color ;
+  }
+
+  &.btnHighPriority:active {
+    background-color: rgb(219, 201, 0);
+    transition: all 0.1s ease 0s;
+  }
+// DEFAULT PRIOR
+  &.btnDefaultPriority {
+    background-color: #ffffff; 
+  }
+
+  &.btnDefaultPriority:active {
+    background-color: rgb(166, 165, 165);
+    transition: all 0.1s ease 0s;
   }
 }
