@@ -37,11 +37,11 @@ import message from '@/components/Message.vue'
 import newNote from '@/components/NewNote.vue'
 import notes from '@/components/Notes.vue'
 import search from '@/components/Search.vue'
-import priority from '@/components/Priority.vue'
+// import priority from '@/components/Priority.vue'
 export default {
 
   components: {
-    message, newNote, notes, search, priority
+    message, newNote, notes, search //, priority
   },
 
   data () {
@@ -52,23 +52,27 @@ export default {
         grid: true,
         note: {
             title: '',
-            discr: ''
+            discr: '',
+            priority: 1
         },
         notes: [
             {
                 title: 'First Note',
                 discr: 'Discription for First',
-                date: new Date(Date.now()).toLocaleString()
+                date: new Date(Date.now()).toLocaleString(),
+                priority: 1
             },
             {
                 title: 'Second Note',
                 discr: 'Discription for Second',
-                date: new Date(Date.now()).toLocaleString()
+                date: new Date(Date.now()).toLocaleString(),
+                priority: 1
             },
             {
                 title: 'Third Note',
                 discr: 'Discription for Third',
-                date: new Date(Date.now()).toLocaleString()
+                date: new Date(Date.now()).toLocaleString(),
+                priority: 1
             }
 
         ]

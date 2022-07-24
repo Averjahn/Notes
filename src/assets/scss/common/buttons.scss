@@ -50,8 +50,8 @@
     background-color: $veryHigh-color;
   }
 
-  &.btnVeryHighPriority:active {
-    background-color: rgb(192, 51, 51);
+  &.btnVeryHighPriority:focus {
+    background-color: rgb(227, 68, 68);
     transition: all 0.1s ease 0s;
   }
 // HIGH PRIOR
@@ -59,7 +59,7 @@
     background-color: $high-color ;
   }
 
-  &.btnHighPriority:active {
+  &.btnHighPriority:focus{
     background-color: rgb(219, 201, 0);
     transition: all 0.1s ease 0s;
   }
@@ -68,8 +68,8 @@
     background-color: #ffffff; 
   }
 
-  &.btnDefaultPriority:active {
-    background-color: rgb(166, 165, 165);
+  &.btnDefaultPriority:focus {
+    background-color: rgb(181, 181, 181);
     transition: all 0.1s ease 0s;
   }
 }
