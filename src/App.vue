@@ -7,7 +7,7 @@
 
         <message v-if="message" :message="message" />
 
-        <priority />
+        <!-- <priority /> -->
 
         <newNote :note="note" @addNote="addNote"/>
 
@@ -98,20 +98,22 @@ computed: {
  methods: {
         addNote() {
             // console.log(this.note)
-            let {title, discr} = this.note
+            let {title, discr, priority} = this.note
             if (title ==='') {
                 this.message = "title can't be blank"
                 return false
             }
-            
+            console.log(`Priority is ${this.note.priority}`)
             this.notes.push({
                 title,
                 discr,
-                date: new Date(Date.now()).toLocaleString()
+                date: new Date(Date.now()).toLocaleString(),
+                priority
             })
             this.message = null
             this.note.title = ''
             this.note.discr = ''
+            this.note.priority = 1
         },
         removeNote (index) {
           this.notes.splice(index, 1)

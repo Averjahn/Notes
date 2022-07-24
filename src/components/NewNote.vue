@@ -11,9 +11,9 @@
                 <label for = "vh">Default</label>
                 <input id = "def" class="Priority" type="checkbox">  -->
 
-                <button class="btn btnVeryHighPriority" type="checkbox" @focus="func">Very high</button>
-                <button class="btn btnHighPriority" type="checkbox">High</button>
-                <button class="btn btnDefaultPriority" type="checkbox">Default</button>
+                <button class="btn btnVeryHighPriority" type="checkbox" @click="note.priority = 3">Very high</button>
+                <button class="btn btnHighPriority" type="checkbox" @click="note.priority = 2">High</button>
+                <button class="btn btnDefaultPriority" type="checkbox" @click="note.priority = 1">Default</button>
 
                 <br>
             </div>
